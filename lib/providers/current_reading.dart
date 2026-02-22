@@ -37,8 +37,8 @@ class CurrentReading extends _$CurrentReading {
   }
 
   void finish() {
-    state = state.copyWith(isReading: false);
-    AnxLog.info('CurrentReading: finish reading ${state.book?.title}');
+    AnxLog.info('CurrentReading: finished chapter or book ${state.book?.title}');
+    state = state.copyWith(isReading: true);
   }
 
   bool get isReading => state.isReading;
