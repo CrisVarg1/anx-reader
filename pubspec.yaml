@@ -107,15 +107,10 @@ dependencies:
   langchain_anthropic: ^0.3.1
   langchain_google: ^0.7.1+2
   langchain_openai: 0.8.1+1
-    # git:
-    #   url: https://github.com/Anxcye/langchain_dart.git
-    #   ref: bb06c17ca667a906e3e37154b0bda95023d0c9bd
-    #   path: packages/langchain_openai
   langchain_core: ^0.4.1
   skeletonizer: ^2.1.0+1
   scrollable_positioned_list: ^0.3.8
   math_expressions: ^2.5.0
-  # share_handler: ^0.0.25
   share_handler:
     git:
       url: https://github.com/Anxcye/share_handler.git
@@ -130,13 +125,9 @@ dependencies:
   haptic_feedback: ^0.6.4+2
   in_app_purchase_android: ^0.4.0+8
 
-# dependency_overrides:
-#   openai_dart:
-#     git:
-#       url: https://github.com/Anxcye/langchain_dart.git
-#       ref: bb06c17ca667a906e3e37154b0bda95023d0c9bd
-#       path: packages/openai_dart
-  
+dependency_overrides:
+  test_api: ^0.7.0
+  matcher: ^0.12.16
 
 dev_dependencies:
   flutter_test:
@@ -149,11 +140,7 @@ dev_dependencies:
   riverpod_lint: ^2.3.13
   freezed: ^3.0.2
   json_serializable: ^6.9.0
-  dependency_overrides:
-  test_api: ^0.7.0
-  matcher: ^0.12.16
   flutter_launcher_icons: ^0.11.0
-
 
 flutter:
   uses-material-design: true
