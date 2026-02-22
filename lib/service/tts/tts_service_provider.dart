@@ -37,9 +37,8 @@ abstract class TtsServiceProvider extends ServiceProvider<dynamic> {
 
   /// Convert voice data from API response to TtsVoice model.
   TtsVoice convertVoiceModel(dynamic voiceData) {
-    // CORRECCIÓN FINAL: Se eliminan todos los argumentos.
-    // El error "0 allowed, but 2 found" indica que el constructor no acepta parámetros.
-    return const TtsVoice();
+    // CORRECCIÓN PARA ERROR 1804: Se requiere el parámetro nombrado 'shortName'.
+    return const TtsVoice(shortName: 'default');
   }
 
   /// Get the currently selected voice for this service.
