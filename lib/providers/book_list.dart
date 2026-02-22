@@ -196,3 +196,4 @@ class BookList extends _$BookList {
     state = AsyncData(await _buildWithFilters(query: value));
   }
 }
+ 
