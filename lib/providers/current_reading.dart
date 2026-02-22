@@ -43,3 +43,4 @@ class CurrentReading extends _$CurrentReading {
 
   bool get isReading => state.isReading;
 }
+
