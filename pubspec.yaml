@@ -149,7 +149,10 @@ dev_dependencies:
   riverpod_lint: ^2.3.13
   freezed: ^3.0.2
   json_serializable: ^6.9.0
-#  flutter_launcher_icons: ^0.11.0
+  dependency_overrides:
+  test_api: ^0.7.0
+  matcher: ^0.12.16
+  flutter_launcher_icons: ^0.11.0
 
 
 flutter:
